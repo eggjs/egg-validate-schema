@@ -1,0 +1,51 @@
+{
+  "name": "egg-validate-schema",
+  "version": "0.0.1",
+  "description": "validate by json-schema plugin for egg",
+  "eggPlugin": {
+    "name": "validateSchema"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "validateSchema",
+    "JSON Schema",
+    "ajv"
+  ],
+  "dependencies": {
+    "ajv": "^5.2.2"
+  },
+  "devDependencies": {
+    "autod": "^2.9.0",
+    "egg": "^1.7.0",
+    "egg-bin": "^4.1.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.9.0",
+    "eslint": "^4.3.0",
+    "eslint-config-egg": "^5.0.0",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-validate-schema.git"
+  },
+  "bugs": "https://github.com/eggjs/egg/issues",
+  "homepage": "https://github.com/eggjs/egg-validate-schema#readme",
+  "author": "mansonchor<mansonchor@126.com>",
+  "license": "MIT"
+}
